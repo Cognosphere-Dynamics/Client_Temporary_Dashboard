@@ -1,0 +1,13 @@
+/* Add these styles to your CSS */
+.relative > div {
+    display: none;
+}
+
+/* Smooth transition for dropdown */
+.relative > div {
+    transition: all 0.3s ease;
+}
+
+.hidden {
+    display: none;
+}
