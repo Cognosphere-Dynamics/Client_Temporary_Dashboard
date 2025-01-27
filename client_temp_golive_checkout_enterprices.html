@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twogere Enterprise Checkout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm fixed w-full top-0 z-50">
+      <div class="max-w-full px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20">
+          <div class="flex items-center p-4">
+            <img src="images/logo.png" alt="Logo" class="h-[60px] w-auto" />
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <button
+              type="button"
+              class="text-white bg-gray-600 hover:bg-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
+            >
+              Back To Website
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="flex">
+      <!-- Sidebar -->
+      <aside
+        class="fixed left-0 top-20 w-64 h-screen bg-white border-r border-gray-200 overflow-y-auto"
+      >
+        <div class="p-4">
+          <nav class="space-y-1">
+            <!-- Twogere Section -->
+            <div class="relative">
+              <a href="./client_temp_twogere_view.html">
+                <button
+                  class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg dropdown-btn"
+                >
+                  <i class="fas fa-flag w-5 h-5 mr-3"></i>
+                  Twogere
+                </button>
+              </a>
+            </div>
+
+            <div class="relative">
+              <button
+                class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg dropdown-btn"
+              >
+                <i class="fas fa-user-graduate w-5 h-5 mr-3"></i>
+                YoDegree
+              </button>
+            </div>
+
+            <div class="relative">
+              <button
+                class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg dropdown-btn"
+              >
+                <i class="fas fa-broadcast-tower w-5 h-5 mr-3"></i>
+                GoLive
+              </button>
+            </div>
+
+            <div class="relative">
+              <a href="./client_temp_native_view.html">
+                <button
+                  class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg dropdown-btn"
+                >
+                  <i class="fas fa-map-marker-alt w-5 h-5 mr-3"></i>
+                  Native
+                </button>
+              </a>
+            </div>
+
+            <div class="relative">
+              <a href="./client_temp_gitcash_view.html">
+                <button
+                  class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg dropdown-btn"
+                >
+                  <i class="fas fa-wallet w-5 h-5 mr-3"></i>
+                  GitCash
+                </button>
+              </a>
+            </div>
+
+            <div class="relative">
+              <button
+                class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg dropdown-btn"
+              >
+                <i class="fas fa-cloud w-5 h-5 mr-3"></i>
+                Vapours
+              </button>
+            </div>
+
+            <div class="relative">
+              <button
+                class="w-full flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg dropdown-btn"
+              >
+                <i class="fas fa-envelope w-5 h-5 mr-3"></i>
+                Support
+              </button>
+            </div>
+          </nav>
+        </div>
+      </aside>
+
+      <!-- Main content wrapper -->
+      <div class="flex-1 ml-64">
+        <main class="p-8 pt-24">
+          <section class="bg-white py-8 antialiased md:py-16">
+            <form action="#" class="mx-auto max-w-screen-xl px-4 2xl:px-0">
+              <ol
+                class="items-center flex w-full max-w-2xl text-center text-sm font-medium text-gray-500 dark:text-gray-400 sm:text-base"
+              >
+                <li
+                  class="after:border-1 flex items-center text-green-500 after:mx-6 after:hidden after:h-1 after:w-full after:border-b after:border-gray-200 dark:text-green-500 dark:after:border-green-700 sm:after:inline-block sm:after:content-[''] md:w-full xl:after:mx-10"
+                >
+                  <span
+                    class="flex items-center after:mx-2 after:text-gray-200 after:content-['/'] dark:after:text-green-500 sm:after:hidden"
+                  >
+                    <svg
+                      class="me-2 h-4 w-4 sm:h-5 sm:w-5"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                      />
+                    </svg>
+                    Cart
+                  </span>
+                </li>
+
+                <li
+                  class="after:border-1 flex items-center text-primary-700 after:mx-6 after:hidden after:h-1 after:w-full after:border-b after:border-gray-200 dark:text-primary-500 dark:after:border-gray-700 sm:after:inline-block sm:after:content-[''] md:w-full xl:after:mx-10"
+                >
+                  <span
+                    class="flex items-center after:mx-2 after:text-gray-200 after:content-['/'] dark:after:text-gray-500 sm:after:hidden"
+                  >
+                    <svg
+                      class="me-2 h-4 w-4 sm:h-5 sm:w-5"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                      />
+                    </svg>
+                    Checkout
+                  </span>
+                </li>
+
+                <li class="flex shrink-0 items-center">
+                  <svg
+                    class="me-2 h-4 w-4 sm:h-5 sm:w-5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8.5 11.5 11 14l4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                  Order summary
+                </li>
+              </ol>
+
+              <div
+                class="mt-6 sm:mt-8 lg:flex lg:items-start lg:gap-12 xl:gap-16"
+              >
+                <div class="min-w-0 flex-1 space-y-8">
+                  <div class="space-y-4">
+                    <h2
+                      class="text-xl font-semibold text-gray-900 dark:text-black-500"
+                    >
+                      Personal Details
+                    </h2>
+                    <!--Full name-->
+                    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                      <div class="relative">
+                        <input
+                          type="text"
+                          id="floating_outlined"
+                          class="mb-2 block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-900 peer"
+                          placeholder=" "
+                        />
+                        <label
+                          for="floating_outlined"
+                          class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+                          >Company Name*</label
+                        >
+                      </div>
+
+                      <!--Email address-->
+                      <div class="relative">
+                        <input
+                          type="text"
+                          id="floating_outlined"
+                          class="mb-2 block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-900 peer"
+                          placeholder=" "
+                        />
+                        <label
+                          for="floating_outlined"
+                          class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+                          >Email address*</label
+                        >
+                      </div>
+                      <!--Countries-->
+                      <div class="relative">
+                        <select
+                          id="select-country-input-3"
+                          class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-900 peer"
+                        >
+                          <option value="" selected disabled></option>
+                          <option vale="US">United States</option>
+                          <option value="AS">Australia</option>
+                          <option value="FR">France</option>
+                          <option value="ES">Spain</option>
+                          <option value="UK">United Kingdom</option>
+                          <option value="UK">Uganda</option>
+                        </select>
+                        <label
+                          for="select-country-input-3"
+                          class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+                          >Country*</label
+                        >
+                      </div>
+
+                      <!--City-->
+                      <div class="relative">
+                        <select
+                          id="select-country-input-3"
+                          class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-900 peer"
+                        >
+                          <option value="" selected disabled></option>
+                          <option vale="US">New York</option>
+                          <option value="AS">Los Angels</option>
+                          <option value="FR">Paris</option>
+                          <option value="ES">Yama</option>
+                          <option value="UK">Manchester</option>
+                          <option value="UK">Kampala</option>
+                        </select>
+                        <label
+                          for="select-country-input-3"
+                          class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+                          >City*</label
+                        >
+                      </div>
+                      <!--Contact-->
+                      <div>
+                        <div class="flex items-center">
+                          <button
+                            id="dropdown-phone-button-3"
+                            data-dropdown-toggle="dropdown-phone-3"
+                            class="z-10 inline-flex shrink-0 items-center rounded-s-lg border border-gray-300 px-4 py-2.5 text-center text-sm font-medium text-gray-900 hover:bg-gray-200 focus:outline-none focus:ring-4 focus:ring-gray-100"
+                            type="button"
+                          >
+                            <svg
+                              fill="none"
+                              aria-hidden="true"
+                              class="me-2 h-4 w-4"
+                              viewBox="0 0 20 15"
+                            >
+                              <rect
+                                width="19.6"
+                                height="14"
+                                y=".5"
+                                fill="#fff"
+                                rx="2"
+                              />
+                              <mask
+                                id="a"
+                                style="mask-type: luminance"
+                                width="20"
+                                height="15"
+                                x="0"
+                                y="0"
+                                maskUnits="userSpaceOnUse"
+                              >
+                                <rect
+                                  width="19.6"
+                                  height="14"
+                                  y=".5"
+                                  fill="#fff"
+                                  rx="2"
+                                />
+                              </mask>
+                              <g mask="url(#a)">
+                                <path
+                                  fill="#D02F44"
+                                  fill-rule="evenodd"
+                                  d="M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z"
+                                  clip-rule="evenodd"
+                                />
+                                <path fill="#46467F" d="M0 .5h8.4v6.533H0z" />
+                              </g>
+                            </svg>
+                            +1
+                            <svg
+                              class="-me-0.5 ms-2 h-4 w-4"
+                              aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="m19 9-7 7-7-7"
+                              />
+                            </svg>
+                          </button>
+                          <div
+                            id="dropdown-phone-3"
+                            class="z-10 hidden w-56 divide-y divide-gray-100 rounded-lg bg-white shadow"
+                          >
+                            <ul
+                              class="p-2 text-sm font-medium text-gray-700 dark:text-gray-200"
+                              aria-labelledby="dropdown-phone-button-2"
+                            >
+                              <li>
+                                <button
+                                  type="button"
+                                  class="inline-flex w-full rounded-md px-3 py-2 text-sm text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400"
+                                  role="menuitem"
+                                >
+                                  <span class="inline-flex items-center">
+                                    <svg
+                                      fill="none"
+                                      aria-hidden="true"
+                                      class="me-2 h-4 w-4"
+                                      viewBox="0 0 20 15"
+                                    >
+                                      <rect
+                                        width="19.6"
+                                        height="14"
+                                        y=".5"
+                                        fill="#fff"
+                                        rx="2"
+                                      />
+                                      <mask
+                                        id="a"
+                                        style="mask-type: luminance"
+                                        width="20"
+                                        height="15"
+                                        x="0"
+                                        y="0"
+                                        maskUnits="userSpaceOnUse"
+                                      >
+                                        <rect
+                                          width="19.6"
+                                          height="14"
+                                          y=".5"
+                                          fill="#fff"
+                                          rx="2"
+                                        />
+                                      </mask>
+                                      <g mask="url(#a)">
+                                        <path
+                                          fill="#D02F44"
+                                          fill-rule="evenodd"
+                                          d="M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z"
+                                          clip-rule="evenodd"
+                                        />
+                                        <path
+                                          fill="#46467F"
+                                          d="M0 .5h8.4v6.533H0z"
+                                        />
+                                      </g>
+                                    </svg>
+                                    United States (+1)
+                                  </span>
+                                </button>
+                              </li>
+                              <li>
+                                <button
+                                  type="button"
+                                  class="inline-flex w-full rounded-md px-3 py-2 text-sm text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400"
+                                  role="menuitem"
+                                >
+                                  <span class="inline-flex items-center">
+                                    <svg
+                                      class="me-2 h-4 w-4"
+                                      fill="none"
+                                      viewBox="0 0 20 15"
+                                    >
+                                      <rect
+                                        width="19.6"
+                                        height="14"
+                                        y=".5"
+                                        fill="#fff"
+                                        rx="2"
+                                      />
+                                      <mask
+                                        id="a"
+                                        style="mask-type: luminance"
+                                        width="20"
+                                        height="15"
+                                        x="0"
+                                        y="0"
+                                        maskUnits="userSpaceOnUse"
+                                      >
+                                        <rect
+                                          width="19.6"
+                                          height="14"
+                                          y=".5"
+                                          fill="#fff"
+                                          rx="2"
+                                        />
+                                      </mask>
+                                      <g mask="url(#a)">
+                                        <path
+                                          fill="#0A17A7"
+                                          d="M0 .5h19.6v14H0z"
+                                        />
+                                        <path
+                                          fill="#fff"
+                                          fill-rule="evenodd"
+                                          d="M-.898-.842L7.467 4.8V-.433h4.667V4.8l8.364-5.642L21.542.706l-6.614 4.46H19.6v4.667h-4.672l6.614 4.46-1.044 1.549-8.365-5.642v5.233H7.467V10.2l-8.365 5.642-1.043-1.548 6.613-4.46H0V5.166h4.672L-1.941.706-.898-.842z"
+                                          clip-rule="evenodd"
+                                        />
+                                        <path
+                                          stroke="#DB1F35"
+                                          stroke-linecap="round"
+                                          stroke-width=".667"
+                                          d="M13.067 4.933L21.933-.9M14.009 10.088l7.947 5.357M5.604 4.917L-2.686-.67M6.503 10.024l-9.189 6.093"
+                                        />
+                                        <path
+                                          fill="#E6273E"
+                                          fill-rule="evenodd"
+                                          d="M0 8.9h8.4v5.6h2.8V8.9h8.4V6.1h-8.4V.5H8.4v5.6H0v2.8z"
+                                          clip-rule="evenodd"
+                                        />
+                                      </g>
+                                    </svg>
+                                    United Kingdom (+44)
+                                  </span>
+                                </button>
+                              </li>
+                              <li>
+                                <button
+                                  type="button"
+                                  class="inline-flex w-full rounded-md px-3 py-2 text-sm text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400"
+                                  role="menuitem"
+                                >
+                                  <span class="inline-flex items-center">
+                                    <svg
+                                      class="me-2 h-4 w-4"
+                                      fill="none"
+                                      viewBox="0 0 20 15"
+                                    >
+                                      <rect
+                                        width="19.6"
+                                        height="14"
+                                        y=".5"
+                                        fill="#fff"
+                                        rx="2"
+                                      />
+                                      <mask
+                                        id="a"
+                                        style="mask-type: luminance"
+                                        width="20"
+                                        height="15"
+                                        x="0"
+                                        y="0"
+                                        maskUnits="userSpaceOnUse"
+                                      >
+                                        <rect
+                                          width="19.6"
+                                          height="14"
+                                          y=".5"
+                                          fill="#fff"
+                                          rx="2"
+                                        />
+                                      </mask>
+                                      <g mask="url(#a)">
+                                        <path
+                                          fill="#262626"
+                                          d="M0 .5h19.6v14H0z"
+                                        />
+                                        <path
+                                          fill="#FFCD00"
+                                          d="M0 2.833h19.6v9.334H0z"
+                                        />
+                                        <path
+                                          fill="#DD0000"
+                                          d="M0 5.167h19.6v4.666H0z"
+                                        />
+                                        <circle
+                                          cx="9.8"
+                                          cy="7.5"
+                                          r="2.333"
+                                          fill="#fff"
+                                        />
+                                        <path
+                                          fill="#262626"
+                                          d="M9.8 6.333l.583 1.75h-1.166z"
+                                        />
+                                        <path
+                                          fill="#262626"
+                                          d="M9.8 8.667l-.583-1.75h1.166z"
+                                        />
+                                      </g>
+                                    </svg>
+                                    Uganda (+256)
+                                  </span>
+                                </button>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="relative w-full">
+                            <input
+                              type="text"
+                              id="phone-input"
+                              class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-e-lg border-1 border-s-0 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-900 peer"
+                              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                              placeholder=" "
+                              required
+                            />
+                            <label
+                              for="phone-input"
+                              class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+                              >Phone Number*</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--Company website-->
+                      <div class="relative">
+                        <input
+                          type="text"
+                          id="floating_outlined"
+                          class="mb-2 block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-900 peer"
+                          placeholder=" "
+                        />
+                        <label
+                          for="floating_outlined"
+                          class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1"
+                          >Company Website</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--Payment methods-->
+                  <div class="space-y-4">
+                    <h3 class="text-xl font-semibold text-gray-900">
+                      Payment Method
+                    </h3>
+
+                    <div class="grid grid-cols-1 gap-3 md:grid-cols-3">
+                      <div
+                        class="rounded-lg border border-gray-200 bg-gray-50 p-4 ps-4 dark:border-gray-200 dark:bg-gray-200"
+                      >
+                        <div class="flex items-start">
+                          <div class="flex h-5 items-center">
+                            <input
+                              id="credit-card"
+                              aria-describedby="credit-card-text"
+                              type="radio"
+                              name="payment-method"
+                              value=""
+                              class="h-4 w-4 border-gray-300 bg-white text-primary-600 focus:ring-2 focus:ring-primary-600 dark:border-white-400 dark:bg-white-400 dark:ring-offset-gray-800 dark:focus:ring-primary-600"
+                              checked
+                            />
+                          </div>
+
+                          <div class="ms-4 text-sm">
+                            <label
+                              for="credit-card"
+                              class="font-medium leading-none text-gray-900"
+                            >
+                              Credit Card
+                            </label>
+                            <p
+                              id="credit-card-text"
+                              class="mt-1 text-xs font-normal text-black-500"
+                            >
+                              Pay with your credit card
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="mt-4 flex items-center gap-3">
+                          <svg
+                            class="h-6 w-10"
+                            viewBox="0 0 40 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              width="40"
+                              height="24"
+                              rx="4"
+                              fill="#1434CB"
+                            />
+                            <path
+                              d="M15.4845 16.3776H12.6885L14.4525 7.60156H17.2485L15.4845 16.3776Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M24.0057 7.95576C23.4697 7.73976 22.5897 7.49976 21.5057 7.49976C18.9177 7.49976 17.0497 8.86776 17.0377 10.8018C17.0137 12.2058 18.3697 13.0018 19.3737 13.4578C20.4017 13.9258 20.7657 14.2298 20.7657 14.6498C20.7657 15.2818 19.9457 15.5738 19.1857 15.5738C18.1457 15.5738 17.5737 15.4098 16.7177 15.0258L16.3537 14.8618L15.9537 17.2458C16.5977 17.5258 17.7897 17.7658 19.0337 17.7778C21.7937 17.7778 23.6257 16.4338 23.6497 14.3698C23.6617 13.2458 22.9457 12.3918 21.3777 11.6918C20.4137 11.2478 19.8177 10.9438 19.8177 10.4758C19.8297 10.0558 20.3057 9.62376 21.3897 9.62376C22.2817 9.61176 22.9337 9.81576 23.4337 10.0198L23.6857 10.1358L24.0057 7.95576Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M27.3925 13.4582C27.6205 12.8502 28.5485 10.2822 28.5485 10.2822C28.5365 10.3062 28.7765 9.65816 28.9165 9.26616L29.1205 10.1562C29.1205 10.1562 29.7045 12.9182 29.8205 13.4582C29.2725 13.4582 28.0565 13.4582 27.3925 13.4582ZM31.1765 7.60176H29.0325C28.4125 7.60176 27.9405 7.77576 27.6685 8.39376L23.8445 16.3778H26.7445C26.7445 16.3778 27.2765 15.0098 27.3805 14.7418C27.6885 14.7418 30.2565 14.7418 30.6565 14.7418C30.7365 15.0938 31.0205 16.3778 31.0205 16.3778H33.6005L31.1765 7.60176Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M10.1974 7.60156L7.49738 13.5496L7.19338 12.2416C6.67338 10.7776 5.11338 9.17156 3.37738 8.39356L5.87338 16.3656H8.79738L13.1094 7.60156H10.1974Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M5.15391 7.60156H0.833906L0.797906 7.79356C4.11791 8.61556 6.27791 10.2896 7.19391 12.2416L6.33591 8.40556C6.17391 7.79356 5.71391 7.61356 5.15391 7.60156Z"
+                              fill="#F7B600"
+                            />
+                          </svg>
+
+                          <svg
+                            class="h-6 w-10"
+                            viewBox="0 0 40 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect width="40" height="24" rx="4" fill="white" />
+                            <circle cx="15" cy="12" r="7" fill="#EB001B" />
+                            <circle cx="25" cy="12" r="7" fill="#F79E1B" />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M20 17.654a6.97 6.97 0 0 0 2.654-2.654 6.97 6.97 0 0 0-2.654-2.654 6.97 6.97 0 0 0-2.654 2.654A6.97 6.97 0 0 0 20 17.654z"
+                              fill="#FF5F00"
+                            />
+                          </svg>
+
+                          <svg
+                            class="h-6 w-10"
+                            viewBox="0 0 40 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              width="40"
+                              height="24"
+                              rx="4"
+                              fill="#2563eb"
+                            />
+                            <path d="M4 7h32v3H4z" fill="white" />
+                            <path
+                              d="M4 14h8v2H4zM14 14h8v2h-8zM24 14h8v2h-8z"
+                              fill="white"
+                            />
+                            <path d="M4 12h4v1H4z" fill="#60a5fa" />
+                          </svg>
+                        </div>
+                      </div>
+
+                      <div
+                        class="rounded-lg border border-gray-200 bg-gray-50 p-4 ps-4 dark:border-gray-200 dark:bg-gray-200"
+                      >
+                        <div class="flex items-start">
+                          <div class="flex h-5 items-center">
+                            <input
+                              id="pay-on-delivery"
+                              aria-describedby="pay-on-delivery-text"
+                              type="radio"
+                              name="payment-method"
+                              value=""
+                              class="h-4 w-4 border-gray-300 bg-white text-primary-600 focus:ring-2 focus:ring-primary-600 dark:border-white-400 dark:bg-white-400 dark:ring-offset-gray-800 dark:focus:ring-primary-600"
+                            />
+                          </div>
+
+                          <div class="ms-4 text-sm">
+                            <label
+                              for="pay-on-delivery"
+                              class="font-medium leading-none text-gray-900"
+                            >
+                              Mobile Money
+                            </label>
+                            <p
+                              id="pay-on-delivery-text"
+                              class="mt-1 text-xs font-normal text-black-500"
+                            >
+                              +$15 payment processing fee
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="mt-4 flex items-center gap-2">
+                          <img
+                            src="./images/mtn.png"
+                            alt="mtn logo"
+                            width="40px"
+                          />
+
+                          <img
+                            src="./images/Airtel.png"
+                            alt="airtel logo"
+                            width="40px"
+                          />
+                        </div>
+                      </div>
+
+                      <div
+                        class="rounded-lg border border-gray-200 bg-gray-50 p-4 ps-4 dark:border-gray-200 dark:bg-gray-200"
+                      >
+                        <div class="flex items-start">
+                          <div class="flex h-5 items-center">
+                            <input
+                              id="paypal-2"
+                              aria-describedby="paypal-text"
+                              type="radio"
+                              name="payment-method"
+                              value=""
+                              class="h-4 w-4 border-gray-300 bg-white text-primary-600 focus:ring-2 focus:ring-primary-600 dark:border-white-400 dark:bg-white-400 dark:ring-offset-gray-800 dark:focus:ring-primary-600"
+                            />
+                          </div>
+
+                          <div class="ms-4 text-sm">
+                            <label
+                              for="paypal-2"
+                              class="font-medium leading-none text-gray-900"
+                            >
+                              Paypal account
+                            </label>
+                            <p
+                              id="paypal-text"
+                              class="mt-1 text-xs font-normal text-black-500"
+                            >
+                              Connect to your account
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="mt-4 flex items-center gap-2">
+                          <svg
+                            class="h-6 w-10"
+                            viewBox="0 0 40 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              width="30"
+                              height="24"
+                              rx="4"
+                              fill="#ffffff"
+                            />
+                            <path
+                              d="M14.8 8.6h4.5c1.2 0 2.2 1 2.2 2.2 0 0.6-0.2 1.2-0.6 1.6-0.6 0.5-1.5 0.8-2.4 0.8h-1.4l-0.6 3.8h-2.3c-0.2 0-0.3-0.2-0.3-0.4l1.2-7.6c0-0.2 0.2-0.4 0.4-0.4z"
+                              fill="#002C8A"
+                            />
+                            <path
+                              d="M18.6 12.4c0.4-0.4 0.6-1 0.6-1.6 0-1.2-1-2.2-2.2-2.2h-4.5c-0.2 0-0.4 0.2-0.4 0.4l-1.2 7.6c0 0.2 0.1 0.4 0.3 0.4h2.3l0.6-3.8h1.4c0.9 0 1.8-0.3 2.4-0.8z"
+                              fill="#009BE1"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Credit Card Form -->
+                  <div id="credit-card-form" class="space-y-4">
+                    <div class="bg-gray-50 rounded-lg">
+                      <form class="space-y-8">
+                        <div class="relative mb-4">
+                          <input
+                            type="text"
+                            id="card-number"
+                            class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-900 peer"
+                            placeholder=" "
+                          />
+                          <label
+                            for="card-number"
+                            class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 start-1"
+                            >Card Number</label
+                          >
+                        </div>
+
+                        <div class="relative mb-4">
+                          <input
+                            type="text"
+                            id="name-on-card"
+                            class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-900 peer"
+                            placeholder=" "
+                          />
+                          <label
+                            for="name-on-card"
+                            class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 start-1"
+                            >Name on Card</label
+                          >
+                        </div>
+
+                        <div class="flex space-x-4">
+                          <div class="relative flex-1 mb-4">
+                            <input
+                              type="text"
+                              id="expiration-date"
+                              class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-900 peer"
+                              placeholder=" "
+                            />
+                            <label
+                              for="expiration-date"
+                              class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 start-1"
+                              >Expiration Date (MM/YY)</label
+                            >
+                          </div>
+
+                          <div class="relative w-1/3 mb-4">
+                            <input
+                              type="text"
+                              id="cvc"
+                              class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-900 peer"
+                              placeholder=" "
+                            />
+                            <label
+                              for="cvc"
+                              class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 start-1"
+                              >CVC</label
+                            >
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+                  <!-- Mobile Money Form -->
+                  <div id="mobile-money-form" class="space-y-4 hidden">
+                    <div class="bg-gray-50 rounded-lg p-6">
+                      <form class="space-y-8">
+                        <div class="relative mb-4">
+                          <input
+                            type="text"
+                            id="mobile-money-name"
+                            class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-900 peer"
+                            placeholder=" "
+                          />
+                          <label
+                            for="mobile-money-name"
+                            class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 start-1"
+                            >Full Name</label
+                          >
+                        </div>
+
+                        <div class="relative mb-4">
+                          <input
+                            type="tel"
+                            id="mobile-money-phone"
+                            class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-900 peer"
+                            placeholder=" "
+                          />
+                          <label
+                            for="mobile-money-phone"
+                            class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 start-1"
+                            >Phone Number</label
+                          >
+                        </div>
+
+                        <div class="relative mb-4">
+                          <select
+                            id="mobile-money-provider"
+                            class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-900 peer"
+                          >
+                            <option value="" selected disabled></option>
+                            <option value="mtn">MTN Mobile Money</option>
+                            <option value="airtel">Airtel Money</option>
+                          </select>
+                          <label
+                            for="mobile-money-provider"
+                            class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 start-1"
+                            >Service Provider</label
+                          >
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+                  <!-- PayPal Form -->
+                  <div id="paypal-form" class="space-y-4 hidden">
+                    <div class="bg-gray-50 rounded-lg">
+                      <form class="space-y-4">
+                        <div class="relative">
+                          <input
+                            type="email"
+                            id="paypal-username"
+                            class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-900 peer"
+                            placeholder=" "
+                          />
+                          <label
+                            for="paypal-username"
+                            class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 start-1"
+                            >PayPal Username/Email</label
+                          >
+                        </div>
+
+                        <div class="relative">
+                          <input
+                            type="text"
+                            id="paypal-account"
+                            class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-900 peer"
+                            placeholder=" "
+                          />
+                          <label
+                            for="paypal-account"
+                            class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 start-1"
+                            >PayPal Account Number</label
+                          >
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+                  <!-- Mobile Money Form -->
+                  <div id="mobile-money-form" class="space-y-4 hidden">
+                    <div class="bg-gray-50 rounded-lg">
+                      <form class="space-y-4">
+                        <div>
+                          <label
+                            for="mobile-money-name"
+                            class="block text-sm font-medium text-gray-700"
+                            >Full Name</label
+                          >
+                          <input
+                            type="text"
+                            id="mobile-money-name"
+                            class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                          />
+                        </div>
+                        <div>
+                          <label
+                            for="mobile-money-phone"
+                            class="block text-sm font-medium text-gray-700"
+                            >Phone Number</label
+                          >
+                          <input
+                            type="tel"
+                            id="mobile-money-phone"
+                            class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                          />
+                        </div>
+                        <div>
+                          <label
+                            for="mobile-money-provider"
+                            class="block text-sm font-medium text-gray-700"
+                            >Service Provider</label
+                          >
+                          <select
+                            id="mobile-money-provider"
+                            class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                          >
+                            <option value="">Select Provider</option>
+                            <option value="mtn">MTN Mobile Money</option>
+                            <option value="airtel">Airtel Money</option>
+                          </select>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+                  <!-- PayPal Form -->
+                  <div id="paypal-form" class="space-y-4 hidden">
+                    <div class="bg-gray-50 rounded-lg">
+                      <form class="space-y-4">
+                        <div>
+                          <label
+                            for="paypal-username"
+                            class="block text-sm font-medium text-gray-700"
+                            >PayPal Username/Email</label
+                          >
+                          <input
+                            type="email"
+                            id="paypal-username"
+                            class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                          />
+                        </div>
+                        <div>
+                          <label
+                            for="paypal-account"
+                            class="block text-sm font-medium text-gray-700"
+                            >PayPal Account Number</label
+                          >
+                          <input
+                            type="text"
+                            id="paypal-account"
+                            class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                          />
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="mt-6 w-full space-y-6 sm:mt-8 lg:mt-0 lg:max-w-xs xl:max-w-md"
+                >
+                  <div class="flow-root">
+                    <div
+                      class="-my-3 divide-y divide-gray-200 dark:divide-gray-800"
+                    >
+                      <dl class="flex items-center justify-between gap-4 py-3">
+                        <dt
+                          class="text-base font-normal text-gray-500 dark:text-gray-400"
+                        >
+                          Subtotal
+                        </dt>
+                        <dd
+                          class="text-base font-medium text-gray-900 dark:text-white"
+                        >
+                          $8,094.00
+                        </dd>
+                      </dl>
+
+                      <dl class="flex items-center justify-between gap-4 py-3">
+                        <dt
+                          class="text-base font-normal text-gray-500 dark:text-gray-400"
+                        >
+                          Savings
+                        </dt>
+                        <dd class="text-base font-medium text-green-500">0</dd>
+                      </dl>
+
+                      <dl class="flex items-center justify-between gap-4 py-3">
+                        <dt
+                          class="text-base font-normal text-gray-500 dark:text-gray-400"
+                        >
+                          Store Pickup
+                        </dt>
+                        <dd
+                          class="text-base font-medium text-gray-900 dark:text-white"
+                        >
+                          $99
+                        </dd>
+                      </dl>
+
+                      <dl class="flex items-center justify-between gap-4 py-3">
+                        <dt
+                          class="text-base font-normal text-gray-500 dark:text-gray-400"
+                        >
+                          Tax
+                        </dt>
+                        <dd
+                          class="text-base font-medium text-gray-900 dark:text-white"
+                        >
+                          $199
+                        </dd>
+                      </dl>
+
+                      <dl class="flex items-center justify-between gap-4 py-3">
+                        <dt
+                          class="text-base font-bold text-gray-900 dark:text-white"
+                        >
+                          Total
+                        </dt>
+                        <dd
+                          class="text-base font-bold text-gray-900 dark:text-white"
+                        >
+                          $8,392.00
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+
+                  <div class="space-y-3">
+                    <button
+                      type="submit"
+                      class="flex w-full items-center justify-center rounded-lg bg-primary-700 px-5 py-2.5 text-sm font-medium text-gray-200 bg-blue-900 hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                    >
+                      Proceed to Payment
+                    </button>
+
+                    <p
+                      class="text-sm font-normal text-gray-500 dark:text-gray-400"
+                    >
+                      Your payment details are safe with us. Read our
+                      <a
+                        href="#"
+                        title=""
+                        class="font-medium text-primary-700 underline hover:no-underline dark:text-primary-500"
+                        >Privacy Policies</a
+                      >
+                      for more.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  </body>
+</html>
