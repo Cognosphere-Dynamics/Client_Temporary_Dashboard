@@ -21,9 +21,11 @@
         </div>
 
         <div class="flex items-center space-x-4">
+            <a href="./client_temp_index.html">
           <button type="button"
             class="text-white bg-gray-600 hover:bg-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">Back
             To Website</button>
+        </a>
         </div>
       </div>
     </div>
@@ -309,12 +311,187 @@
                         class="mb-2 block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-900 peer"
                         placeholder=" " />
                       <label for="floating_outlined"
-                        class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Company Website</label>
+                        class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">ZIP Code</label>
                     </div>
 
                   </div>
 
-                  
+                  <!--Company details-->
+                  <h2 class="text-xl font-semibold text-gray-900 dark:text-black-500">Company Details</h2>
+                  <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                    <div class="relative">
+                      <input type="text" id="floating_outlined"
+                        class="mb-2 block px-2.5 pb-2.5 pt-4  w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-900 peer"
+                        placeholder=" " />
+                      <label for="floating_outlined"
+                        class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Company Name*</label>
+                    </div>
+
+                    <!--Email address-->
+                    <div class="relative">
+                      <input type="text" id="floating_outlined"
+                        class="mb-2 block px-2.5 pb-2.5 pt-4  w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-900 peer"
+                        placeholder=" " />
+                      <label for="floating_outlined"
+                        class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Email
+                        address*</label>
+                    </div>
+                    <!--Countries-->
+                    <div class="relative">
+                      <select id="select-country-input-3"
+                        class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-900 peer">
+                        <option value="" selected disabled></option>
+                        <option vale="US">United States</option>
+                        <option value="AS">Australia</option>
+                        <option value="FR">France</option>
+                        <option value="ES">Spain</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="UK">Uganda</option>
+                      </select>
+                      <label for="select-country-input-3"
+                        class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Country*</label>
+                    </div>
+
+                    <!--City-->
+                    <div class="relative">
+                      <select id="select-country-input-3"
+                        class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-900 peer">
+                        <option value="" selected disabled></option>
+                        <option vale="US">New York</option>
+                        <option value="AS">Los Angels</option>
+                        <option value="FR">Paris</option>
+                        <option value="ES">Yama</option>
+                        <option value="UK">Manchester</option>
+                        <option value="UK">Kampala</option>
+                      </select>
+                      <label for="select-country-input-3"
+                        class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">City*</label>
+                    </div>
+                    <!--Contact-->
+                    <div>
+                      <div class="flex items-center">
+                        <button id="dropdown-phone-button-3" data-dropdown-toggle="dropdown-phone-3"
+                          class="z-10 inline-flex shrink-0 items-center rounded-s-lg border border-gray-300  px-4 py-2.5 text-center text-sm font-medium text-gray-900 hover:bg-gray-200 focus:outline-none focus:ring-4 focus:ring-gray-100"
+                          type="button">
+                          <svg fill="none" aria-hidden="true" class="me-2 h-4 w-4" viewBox="0 0 20 15">
+                            <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                            <mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0"
+                              maskUnits="userSpaceOnUse">
+                              <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                            </mask>
+                            <g mask="url(#a)">
+                              <path fill="#D02F44" fill-rule="evenodd"
+                                d="M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z"
+                                clip-rule="evenodd" />
+                              <path fill="#46467F" d="M0 .5h8.4v6.533H0z" />
+                            </g>
+                          </svg>
+                          +1
+                          <svg class="-me-0.5 ms-2 h-4 w-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="m19 9-7 7-7-7" />
+                          </svg>
+                        </button>
+                        <div id="dropdown-phone-3"
+                          class="z-10 hidden w-56 divide-y divide-gray-100 rounded-lg bg-white shadow">
+                          <ul class="p-2 text-sm font-medium text-gray-700 dark:text-gray-200"
+                            aria-labelledby="dropdown-phone-button-2">
+                            <li>
+                              <button type="button"
+                                class="inline-flex w-full rounded-md px-3 py-2 text-sm text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400"
+                                role="menuitem">
+                                <span class="inline-flex items-center">
+                                  <svg fill="none" aria-hidden="true" class="me-2 h-4 w-4" viewBox="0 0 20 15">
+                                    <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                                    <mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0"
+                                      maskUnits="userSpaceOnUse">
+                                      <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                                    </mask>
+                                    <g mask="url(#a)">
+                                      <path fill="#D02F44" fill-rule="evenodd"
+                                        d="M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z"
+                                        clip-rule="evenodd" />
+                                      <path fill="#46467F" d="M0 .5h8.4v6.533H0z" />
+                                    </g>
+                                  </svg>
+                                  United States (+1)
+                                </span>
+                              </button>
+                            </li>
+                            <li>
+                              <button type="button"
+                                class="inline-flex w-full rounded-md px-3 py-2 text-sm text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400"
+                                role="menuitem">
+                                <span class="inline-flex items-center">
+                                  <svg class="me-2 h-4 w-4" fill="none" viewBox="0 0 20 15">
+                                    <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                                    <mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0"
+                                      maskUnits="userSpaceOnUse">
+                                      <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                                    </mask>
+                                    <g mask="url(#a)">
+                                      <path fill="#0A17A7" d="M0 .5h19.6v14H0z" />
+                                      <path fill="#fff" fill-rule="evenodd"
+                                        d="M-.898-.842L7.467 4.8V-.433h4.667V4.8l8.364-5.642L21.542.706l-6.614 4.46H19.6v4.667h-4.672l6.614 4.46-1.044 1.549-8.365-5.642v5.233H7.467V10.2l-8.365 5.642-1.043-1.548 6.613-4.46H0V5.166h4.672L-1.941.706-.898-.842z"
+                                        clip-rule="evenodd" />
+                                      <path stroke="#DB1F35" stroke-linecap="round" stroke-width=".667"
+                                        d="M13.067 4.933L21.933-.9M14.009 10.088l7.947 5.357M5.604 4.917L-2.686-.67M6.503 10.024l-9.189 6.093" />
+                                      <path fill="#E6273E" fill-rule="evenodd"
+                                        d="M0 8.9h8.4v5.6h2.8V8.9h8.4V6.1h-8.4V.5H8.4v5.6H0v2.8z" clip-rule="evenodd" />
+                                    </g>
+                                  </svg>
+                                  United Kingdom (+44)
+                                </span>
+                              </button>
+                            </li>
+                            <li>
+                              <button type="button"
+                                class="inline-flex w-full rounded-md px-3 py-2 text-sm text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400"
+                                role="menuitem">
+                                <span class="inline-flex items-center">
+                                  <svg class="me-2 h-4 w-4" fill="none" viewBox="0 0 20 15">
+                                    <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                                    <mask id="a" style="mask-type:luminance" width="20" height="15" x="0" y="0"
+                                      maskUnits="userSpaceOnUse">
+                                      <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                                    </mask>
+                                    <g mask="url(#a)">
+                                      <path fill="#262626" d="M0 .5h19.6v14H0z" />
+                                      <path fill="#FFCD00" d="M0 2.833h19.6v9.334H0z" />
+                                      <path fill="#DD0000" d="M0 5.167h19.6v4.666H0z" />
+                                      <circle cx="9.8" cy="7.5" r="2.333" fill="#fff" />
+                                      <path fill="#262626" d="M9.8 6.333l.583 1.75h-1.166z" />
+                                      <path fill="#262626" d="M9.8 8.667l-.583-1.75h1.166z" />
+                                    </g>
+                                  </svg>
+                                  Uganda (+256)
+                                </span>
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="relative w-full">
+                          <input type="text" id="phone-input"
+                            class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-e-lg border-1 border-s-0 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-900 peer"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder=" " required />
+                          <label for="phone-input"
+                            class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Phone
+                            Number*</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--Company website-->
+                    <div class="relative">
+                      <input type="text" id="floating_outlined"
+                        class="mb-2 block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-900 peer"
+                        placeholder=" " />
+                      <label for="floating_outlined"
+                        class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Company Website</label>
+                    </div>
+
+                  </div>
                 </div>
 
                 <!--Payment methods-->
@@ -396,9 +573,9 @@
                       </div>
 
                       <div class="mt-4 flex items-center gap-2">
-                       <img src="images/mtn momo.png" alt="mtn logo" width="30px">  
+                       <img src="images/mtn.png" alt="mtn logo" width="30px">  
 
-                        <img src="images/airtel pay.png" alt="airtel logo" width="30px">
+                        <img src="images/Airtel.png" alt="airtel logo" width="30px">
                       </div>
                     </div>
 
